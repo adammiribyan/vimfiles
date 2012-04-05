@@ -5,7 +5,6 @@
 ""   Tim Pope  <tbaggery.com>
 ""   Janus  <github.com/carlhuda/janus>
 ""
-
 set nocompatible
 syntax enable
 set encoding=utf-8
@@ -14,8 +13,13 @@ call pathogen#infect()
 filetype plugin indent on
 
 set background=dark
-color molokai
+" color hemisu
 set nonumber
+set ruler       " show the cursor position all the time
+set cursorline
+set showcmd     " display incomplete commands
+set shell=bash  " avoids munging PATH under zsh
+set number
 set ruler       " show the cursor position all the time
 set cursorline
 set showcmd     " display incomplete commands
@@ -130,9 +134,9 @@ if has("statusline") && !&cp
 
   " Finish the statusline
   set statusline+=Line:%l/%L[%p%%]
-  set statusline+=Col:%v
-  set statusline+=Buf:#%n
-  set statusline+=[%b][0x%B]
+  " set statusline+=Col:%v
+  " set statusline+=Buf:#%n
+  " set statusline+=[%b][0x%B]
 endif
 
 let g:CommandTMaxHeight=10

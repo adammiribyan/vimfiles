@@ -28,3 +28,6 @@
 [submodule "bundle/ruby"]
 	path = bundle/ruby
 	url = http://github.com/vim-ruby/vim-ruby.git
+[submodule "bundle/hemisu"]
+	path = bundle/hemisu
+	url = http://github.com/noahfrederick/Hemisu.git
